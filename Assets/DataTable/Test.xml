@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Table>
+  <Row>
+   <id>1</id>
+   <testInt1>12</testInt1>
+   <testStr1>abc123</testStr1>
+  </Row>
+</Table>
