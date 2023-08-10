@@ -464,11 +464,6 @@ export const ResType = {
         extConfig: 'object',
         errMsg: 'string',
     },
-    GetFuzzyLocationSuccessCallbackResult: {
-        latitude: 'number',
-        longitude: 'number',
-        errMsg: 'string',
-    },
     DataType: {
         type: 'number',
         subKey: 'string',
@@ -509,6 +504,11 @@ export const ResType = {
         hasSystemProxy: 'bool',
         networkType: 'string',
         signalStrength: 'number',
+        errMsg: 'string',
+    },
+    GetPrivacySettingSuccessCallbackResult: {
+        needAuthorization: 'bool',
+        privacyContractName: 'string',
         errMsg: 'string',
     },
     GetScreenBrightnessSuccessCallbackOption: {
@@ -578,6 +578,10 @@ export const ResType = {
         errCode: 'number',
         errMsg: 'string',
         openIdList: 'string[]',
+    },
+    RequestFailCallbackErr: {
+        errMsg: 'string',
+        errno: 'number',
     },
     LoginSuccessCallbackResult: {
         code: 'string',
@@ -810,6 +814,13 @@ export const ResType = {
         errMsg: 'string',
         errCode: 'number',
     },
+    RequestMidasPaymentFailCallbackErr: {
+        errCode: 'number',
+        errMsg: 'string',
+    },
+    RequestMidasPaymentSuccessCallbackResult: {
+        errMsg: 'string',
+    },
     RequestSubscribeMessageFailCallbackResult: {
         errCode: 'number',
         errMsg: 'string',
@@ -899,6 +910,10 @@ export const ResType = {
     MidasPaymentGameItemError: {
         errMsg: 'string',
         errCode: 'number',
+    },
+    RequestSubscribeLiveActivitySuccessCallbackResult: {
+        code: 'string',
+        errMsg: 'string',
     },
     FrameDataOptions: {
         data: 'arrayBuffer',

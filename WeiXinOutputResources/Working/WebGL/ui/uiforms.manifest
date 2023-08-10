@@ -1,0 +1,95 @@
+ManifestFileVersion: 0
+CRC: 2959130277
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3d18e8742f42a0641f74f66ee3cd515f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ad1e7c0b035ae5974ad8bcd7dc7906bb
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c04f3be6bab0c7748bc236f9023e47f9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d0fea4037c7349d49af8583511aaeb86, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 02bbd1c1f00c17842b1449ae2b66a932, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a5079836f95c2a44b96fa331487ebb70, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3d18eec7c2f2d3d4ca59e310ef625db1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+- Class: 225
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.ArgumentCache
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentListenerMode
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.UnityEvent
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.RectOffset
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.AnimationTriggers
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.ColorBlock
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.FontData
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Navigation
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Slider/SliderEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.SpriteState
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Toggle/ToggleEvent
+Assets:
+- Assets/GameMain/UI/UIForms/DialogForm.prefab
+- Assets/GameMain/UI/UIForms/AboutForm.prefab
+- Assets/GameMain/UI/UIForms/SettingForm.prefab
+- Assets/GameMain/UI/UIForms/MenuForm.prefab
+Dependencies:
+- C:/Users/admin/Downloads/StarForce/WeiXinOutputResources/Working/WebGL/ui/uisprites/common
+- C:/Users/admin/Downloads/StarForce/WeiXinOutputResources/Working/WebGL/ui/uisprites/icons
+- C:/Users/admin/Downloads/StarForce/WeiXinOutputResources/Working/WebGL/ui/uisprites/logos

@@ -105,7 +105,7 @@ public class ExcelUtility
 			Dictionary<string, object> row = new Dictionary<string, object> ();
 			for (int j = 0; j < colCount; j++) {
 				//读取第3行数据作为表头字段
-				string field = mSheet.Rows [2] [j].ToString ();
+				string field = mSheet.Rows [1] [j].ToString ();
 				//Key-Value对应
 				row [field] = mSheet.Rows [i] [j];
 			}
@@ -202,9 +202,9 @@ public class ExcelUtility
 			stringBuilder.Append ("  <Row>");
 			stringBuilder.Append ("\r\n");
 			for (int j = 0; j < colCount; j++) {
-				stringBuilder.Append ("   <" + mSheet.Rows [2] [j].ToString () + ">");
+				stringBuilder.Append ("   <" + mSheet.Rows [1] [j].ToString () + ">");
 				stringBuilder.Append (mSheet.Rows [i] [j].ToString ());
-				stringBuilder.Append ("</" + mSheet.Rows [2] [j].ToString () + ">");
+				stringBuilder.Append ("</" + mSheet.Rows [1] [j].ToString () + ">");
 				stringBuilder.Append ("\r\n");
 			}
 			//使用换行符分割每一行

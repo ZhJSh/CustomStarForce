@@ -86,9 +86,6 @@ WX_GetConnectedBluetoothDevices:function(conf, callbackId) {
 WX_GetExtConfig:function(conf, callbackId) {
     window.WXWASMSDK.WX_GetExtConfig(_WXPointer_stringify_adaptor(conf), _WXPointer_stringify_adaptor(callbackId));
 },
-WX_GetFuzzyLocation:function(conf, callbackId) {
-    window.WXWASMSDK.WX_GetFuzzyLocation(_WXPointer_stringify_adaptor(conf), _WXPointer_stringify_adaptor(callbackId));
-},
 WX_GetGameClubData:function(conf, callbackId) {
     window.WXWASMSDK.WX_GetGameClubData(_WXPointer_stringify_adaptor(conf), _WXPointer_stringify_adaptor(callbackId));
 },
@@ -106,6 +103,9 @@ WX_GetLocation:function(conf, callbackId) {
 },
 WX_GetNetworkType:function(conf, callbackId) {
     window.WXWASMSDK.WX_GetNetworkType(_WXPointer_stringify_adaptor(conf), _WXPointer_stringify_adaptor(callbackId));
+},
+WX_GetPrivacySetting:function(conf, callbackId) {
+    window.WXWASMSDK.WX_GetPrivacySetting(_WXPointer_stringify_adaptor(conf), _WXPointer_stringify_adaptor(callbackId));
 },
 WX_GetScreenBrightness:function(conf, callbackId) {
     window.WXWASMSDK.WX_GetScreenBrightness(_WXPointer_stringify_adaptor(conf), _WXPointer_stringify_adaptor(callbackId));
@@ -194,6 +194,9 @@ WX_OpenCustomerServiceChat:function(conf, callbackId) {
 WX_OpenCustomerServiceConversation:function(conf, callbackId) {
     window.WXWASMSDK.WX_OpenCustomerServiceConversation(_WXPointer_stringify_adaptor(conf), _WXPointer_stringify_adaptor(callbackId));
 },
+WX_OpenPrivacyContract:function(conf, callbackId) {
+    window.WXWASMSDK.WX_OpenPrivacyContract(_WXPointer_stringify_adaptor(conf), _WXPointer_stringify_adaptor(callbackId));
+},
 WX_OpenSetting:function(conf, callbackId) {
     window.WXWASMSDK.WX_OpenSetting(_WXPointer_stringify_adaptor(conf), _WXPointer_stringify_adaptor(callbackId));
 },
@@ -229,6 +232,9 @@ WX_RequestSubscribeMessage:function(conf, callbackId) {
 },
 WX_RequestSubscribeSystemMessage:function(conf, callbackId) {
     window.WXWASMSDK.WX_RequestSubscribeSystemMessage(_WXPointer_stringify_adaptor(conf), _WXPointer_stringify_adaptor(callbackId));
+},
+WX_RequirePrivacyAuthorize:function(conf, callbackId) {
+    window.WXWASMSDK.WX_RequirePrivacyAuthorize(_WXPointer_stringify_adaptor(conf), _WXPointer_stringify_adaptor(callbackId));
 },
 WX_RestartMiniProgram:function(conf, callbackId) {
     window.WXWASMSDK.WX_RestartMiniProgram(_WXPointer_stringify_adaptor(conf), _WXPointer_stringify_adaptor(callbackId));
@@ -376,6 +382,9 @@ WX_OpenPage:function(conf, callbackId) {
 },
 WX_RequestMidasPaymentGameItem:function(conf, callbackId) {
     window.WXWASMSDK.WX_RequestMidasPaymentGameItem(_WXPointer_stringify_adaptor(conf), _WXPointer_stringify_adaptor(callbackId));
+},
+WX_RequestSubscribeLiveActivity:function(conf, callbackId) {
+    window.WXWASMSDK.WX_RequestSubscribeLiveActivity(_WXPointer_stringify_adaptor(conf), _WXPointer_stringify_adaptor(callbackId));
 },
 
 WX_OperateGameRecorderVideo:function(option){

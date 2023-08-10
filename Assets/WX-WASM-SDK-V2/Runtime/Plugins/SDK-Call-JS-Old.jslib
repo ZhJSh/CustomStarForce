@@ -974,4 +974,10 @@ mergeInto(LibraryManager.library, {
     WXVideoSetProperty: function(id, key, value) {
         window.WXWASMSDK.WXVideoSetProperty(_WXPointer_stringify_adaptor(id), _WXPointer_stringify_adaptor(key), _WXPointer_stringify_adaptor(value));
     },
+    WX_OnNeedPrivacyAuthorization:function() {
+        window.WXWASMSDK.WX_OnNeedPrivacyAuthorization();
+    },
+    WX_PrivacyAuthorizeResolve: function(option) {
+        window.WXWASMSDK.WX_PrivacyAuthorizeResolve(_WXPointer_stringify_adaptor(option));
+    }
 });

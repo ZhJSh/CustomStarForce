@@ -755,30 +755,6 @@ export default {
             },
         });
     },
-    WX_GetFuzzyLocation(conf, callbackId) {
-        const config = formatJsonStr(conf);
-        wx.getFuzzyLocation({
-            ...config,
-            success(res) {
-                formatResponse('GetFuzzyLocationSuccessCallbackResult', res);
-                moduleHelper.send('GetFuzzyLocationCallback', JSON.stringify({
-                    callbackId, type: 'success', res: JSON.stringify(res),
-                }));
-            },
-            fail(res) {
-                formatResponse('GeneralCallbackResult', res);
-                moduleHelper.send('GetFuzzyLocationCallback', JSON.stringify({
-                    callbackId, type: 'fail', res: JSON.stringify(res),
-                }));
-            },
-            complete(res) {
-                formatResponse('GeneralCallbackResult', res);
-                moduleHelper.send('GetFuzzyLocationCallback', JSON.stringify({
-                    callbackId, type: 'complete', res: JSON.stringify(res),
-                }));
-            },
-        });
-    },
     WX_GetGameClubData(conf, callbackId) {
         const config = formatJsonStr(conf);
         wx.getGameClubData({
@@ -918,6 +894,30 @@ export default {
             complete(res) {
                 formatResponse('GeneralCallbackResult', res);
                 moduleHelper.send('GetNetworkTypeCallback', JSON.stringify({
+                    callbackId, type: 'complete', res: JSON.stringify(res),
+                }));
+            },
+        });
+    },
+    WX_GetPrivacySetting(conf, callbackId) {
+        const config = formatJsonStr(conf);
+        wx.getPrivacySetting({
+            ...config,
+            success(res) {
+                formatResponse('GetPrivacySettingSuccessCallbackResult', res);
+                moduleHelper.send('GetPrivacySettingCallback', JSON.stringify({
+                    callbackId, type: 'success', res: JSON.stringify(res),
+                }));
+            },
+            fail(res) {
+                formatResponse('GeneralCallbackResult', res);
+                moduleHelper.send('GetPrivacySettingCallback', JSON.stringify({
+                    callbackId, type: 'fail', res: JSON.stringify(res),
+                }));
+            },
+            complete(res) {
+                formatResponse('GeneralCallbackResult', res);
+                moduleHelper.send('GetPrivacySettingCallback', JSON.stringify({
                     callbackId, type: 'complete', res: JSON.stringify(res),
                 }));
             },
@@ -1321,7 +1321,7 @@ export default {
                 }));
             },
             fail(res) {
-                formatResponse('GeneralCallbackResult', res);
+                formatResponse('RequestFailCallbackErr', res);
                 moduleHelper.send('LoginCallback', JSON.stringify({
                     callbackId, type: 'fail', res: JSON.stringify(res),
                 }));
@@ -1622,6 +1622,30 @@ export default {
             },
         });
     },
+    WX_OpenPrivacyContract(conf, callbackId) {
+        const config = formatJsonStr(conf);
+        wx.openPrivacyContract({
+            ...config,
+            success(res) {
+                formatResponse('GeneralCallbackResult', res);
+                moduleHelper.send('OpenPrivacyContractCallback', JSON.stringify({
+                    callbackId, type: 'success', res: JSON.stringify(res),
+                }));
+            },
+            fail(res) {
+                formatResponse('GeneralCallbackResult', res);
+                moduleHelper.send('OpenPrivacyContractCallback', JSON.stringify({
+                    callbackId, type: 'fail', res: JSON.stringify(res),
+                }));
+            },
+            complete(res) {
+                formatResponse('GeneralCallbackResult', res);
+                moduleHelper.send('OpenPrivacyContractCallback', JSON.stringify({
+                    callbackId, type: 'complete', res: JSON.stringify(res),
+                }));
+            },
+        });
+    },
     WX_OpenSetting(conf, callbackId) {
         const config = formatJsonStr(conf);
         wx.openSetting({
@@ -1846,13 +1870,13 @@ export default {
         wx.requestMidasPayment({
             ...config,
             success(res) {
-                formatResponse('GeneralCallbackResult', res);
+                formatResponse('RequestMidasPaymentSuccessCallbackResult', res);
                 moduleHelper.send('RequestMidasPaymentCallback', JSON.stringify({
                     callbackId, type: 'success', res: JSON.stringify(res),
                 }));
             },
             fail(res) {
-                formatResponse('MidasPaymentError', res);
+                formatResponse('RequestMidasPaymentFailCallbackErr', res);
                 moduleHelper.send('RequestMidasPaymentCallback', JSON.stringify({
                     callbackId, type: 'fail', res: JSON.stringify(res),
                 }));
@@ -1908,6 +1932,30 @@ export default {
             complete(res) {
                 formatResponse('GeneralCallbackResult', res);
                 moduleHelper.send('RequestSubscribeSystemMessageCallback', JSON.stringify({
+                    callbackId, type: 'complete', res: JSON.stringify(res),
+                }));
+            },
+        });
+    },
+    WX_RequirePrivacyAuthorize(conf, callbackId) {
+        const config = formatJsonStr(conf);
+        wx.requirePrivacyAuthorize({
+            ...config,
+            success(res) {
+                formatResponse('GeneralCallbackResult', res);
+                moduleHelper.send('RequirePrivacyAuthorizeCallback', JSON.stringify({
+                    callbackId, type: 'success', res: JSON.stringify(res),
+                }));
+            },
+            fail(res) {
+                formatResponse('GeneralCallbackResult', res);
+                moduleHelper.send('RequirePrivacyAuthorizeCallback', JSON.stringify({
+                    callbackId, type: 'fail', res: JSON.stringify(res),
+                }));
+            },
+            complete(res) {
+                formatResponse('GeneralCallbackResult', res);
+                moduleHelper.send('RequirePrivacyAuthorizeCallback', JSON.stringify({
                     callbackId, type: 'complete', res: JSON.stringify(res),
                 }));
             },
@@ -3084,6 +3132,30 @@ export default {
             complete(res) {
                 formatResponse('MidasPaymentGameItemError', res);
                 moduleHelper.send('RequestMidasPaymentGameItemCallback', JSON.stringify({
+                    callbackId, type: 'complete', res: JSON.stringify(res),
+                }));
+            },
+        });
+    },
+    WX_RequestSubscribeLiveActivity(conf, callbackId) {
+        const config = formatJsonStr(conf);
+        wx.requestSubscribeLiveActivity({
+            ...config,
+            success(res) {
+                formatResponse('RequestSubscribeLiveActivitySuccessCallbackResult', res);
+                moduleHelper.send('RequestSubscribeLiveActivityCallback', JSON.stringify({
+                    callbackId, type: 'success', res: JSON.stringify(res),
+                }));
+            },
+            fail(res) {
+                formatResponse('GeneralCallbackResult', res);
+                moduleHelper.send('RequestSubscribeLiveActivityCallback', JSON.stringify({
+                    callbackId, type: 'fail', res: JSON.stringify(res),
+                }));
+            },
+            complete(res) {
+                formatResponse('GeneralCallbackResult', res);
+                moduleHelper.send('RequestSubscribeLiveActivityCallback', JSON.stringify({
                     callbackId, type: 'complete', res: JSON.stringify(res),
                 }));
             },

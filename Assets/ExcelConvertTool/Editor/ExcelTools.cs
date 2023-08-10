@@ -24,7 +24,7 @@ public class ExcelTools : EditorWindow
     /// <summary>
     /// Excel文件所在目录
     /// </summary>
-    private static string defaultExcelDir = "Excels";
+    private static string excelDir = "Excels";
 
     /// <summary>
     /// Excel文件的绝对路径
@@ -107,12 +107,11 @@ public class ExcelTools : EditorWindow
         GUILayout.EndHorizontal();
 
         GUILayout.BeginHorizontal();
-        string excelDir = defaultExcelDir;
         excelDir = EditorGUILayout.TextField("Excel文件路径:", excelDir);
         GUILayout.EndHorizontal();
 
         excelList.Clear();
-        excelFullPath = excelFullPath.Replace(defaultExcelDir, excelDir);
+        excelFullPath = pathRoot + CheckEditorPath("/" + excelDir);
         if (!Directory.Exists(excelDir))
         {
             EditorGUILayout.LabelField($"不存在目录{excelFullPath}");
@@ -225,11 +224,10 @@ public class ExcelTools : EditorWindow
         pathRoot = Application.dataPath;
         pathCode = pathRoot + CheckEditorPath("/Scripts/DataTableClass");
         targetDir = pathRoot + CheckEditorPath("/DataTable/");
-        /*//注意这里需要对路径进行处理
+        //注意这里需要对路径进行处理
         //目的是去除Assets这部分字符以获取项目目录
         //我表示Windows的/符号一直没有搞懂
-        pathRoot = pathRoot.Substring(0, pathRoot.LastIndexOf("/"));*/
-        excelFullPath = pathRoot.Replace("Assets", defaultExcelDir);
+        pathRoot = pathRoot.Substring(0, pathRoot.LastIndexOf("/"));
         excelList = new List<string>();
         scrollPos = new Vector2(instance.position.x, instance.position.y + 75);
     }

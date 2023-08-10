@@ -283,6 +283,10 @@ var WXAssetBundleLibrary = {
     }
   },
 
+  CheckWXFSReady: function () {
+    return WXFS.fs!==undefined;
+  },
+
   WXGetBundleFromXML: function(url, id, callback, needRetry){
     needRetry = needRetry?needRetry:true;
     var _url = UTF8ToString(url);
