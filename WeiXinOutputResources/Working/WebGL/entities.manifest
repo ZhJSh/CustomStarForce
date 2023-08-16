@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2443606226
+CRC: 4206401882
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 60d08d2bb2cedfc1b3b74c107f1bca67
+    Hash: 6fe8eb18fc317ef89ec818a6a7dc77b9
   TypeTreeHash:
     serializedVersion: 2
-    Hash: cd224dc4c22824ffeabc30b6e1424c2d
+    Hash: 695e4afea6c52c651deacba63f21bfc2
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -50,5 +50,5 @@ Assets:
 - Assets/GameMain/Entities/PlayerBolt.prefab
 - Assets/GameMain/Entities/EnemyExplosion.prefab
 Dependencies:
-- C:/Users/admin/Downloads/StarForce/WeiXinOutputResources/Working/WebGL/materials
-- C:/Users/admin/Downloads/StarForce/WeiXinOutputResources/Working/WebGL/meshes
+- D:/WorkSpace/StarForce/WeiXinOutputResources/Working/WebGL/materials
+- D:/WorkSpace/StarForce/WeiXinOutputResources/Working/WebGL/meshes

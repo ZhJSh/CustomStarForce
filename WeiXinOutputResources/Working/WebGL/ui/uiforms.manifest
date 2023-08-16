@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2959130277
+CRC: 2782734310
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 3d18e8742f42a0641f74f66ee3cd515f
+    Hash: c5261ee350c178c9d684e5b57ef9e1b9
   TypeTreeHash:
     serializedVersion: 2
-    Hash: ad1e7c0b035ae5974ad8bcd7dc7906bb
+    Hash: 6001512911c2f842a5af2a7e72cb7c5b
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -18,15 +18,13 @@ ClassTypes:
 - Class: 48
   Script: {instanceID: 0}
 - Class: 114
-  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: c04f3be6bab0c7748bc236f9023e47f9, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: d0fea4037c7349d49af8583511aaeb86, type: 3}
 - Class: 114
@@ -38,7 +36,9 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 3d18eec7c2f2d3d4ca59e310ef625db1, type: 3}
 - Class: 114
@@ -90,6 +90,6 @@ Assets:
 - Assets/GameMain/UI/UIForms/SettingForm.prefab
 - Assets/GameMain/UI/UIForms/MenuForm.prefab
 Dependencies:
-- C:/Users/admin/Downloads/StarForce/WeiXinOutputResources/Working/WebGL/ui/uisprites/common
-- C:/Users/admin/Downloads/StarForce/WeiXinOutputResources/Working/WebGL/ui/uisprites/icons
-- C:/Users/admin/Downloads/StarForce/WeiXinOutputResources/Working/WebGL/ui/uisprites/logos
+- D:/WorkSpace/StarForce/WeiXinOutputResources/Working/WebGL/ui/uisprites/common
+- D:/WorkSpace/StarForce/WeiXinOutputResources/Working/WebGL/ui/uisprites/icons
+- D:/WorkSpace/StarForce/WeiXinOutputResources/Working/WebGL/ui/uisprites/logos

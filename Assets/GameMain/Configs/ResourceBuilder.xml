@@ -2,14 +2,14 @@
 <UnityGameFramework>
   <ResourceBuilder>
     <Settings>
-      <InternalResourceVersion>2</InternalResourceVersion>
+      <InternalResourceVersion>3</InternalResourceVersion>
       <Platforms>128</Platforms>
       <AssetBundleCompression>1</AssetBundleCompression>
       <CompressionHelperTypeName>UnityGameFramework.Runtime.DefaultCompressionHelper</CompressionHelperTypeName>
       <AdditionalCompressionSelected>True</AdditionalCompressionSelected>
       <ForceRebuildAssetBundleSelected>True</ForceRebuildAssetBundleSelected>
       <BuildEventHandlerTypeName>StarForce.Editor.StarForceBuildEventHandler</BuildEventHandlerTypeName>
-      <OutputDirectory>C:/Users/admin/Downloads/StarForce/WeiXinOutputResources</OutputDirectory>
+      <OutputDirectory>D:/WorkSpace/StarForce/WeiXinOutputResources</OutputDirectory>
       <OutputPackageSelected>True</OutputPackageSelected>
       <OutputFullSelected>False</OutputFullSelected>
       <OutputPackedSelected>False</OutputPackedSelected>

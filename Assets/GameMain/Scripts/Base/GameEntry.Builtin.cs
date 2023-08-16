@@ -205,7 +205,7 @@ namespace StarForce
             Download = UnityGameFramework.Runtime.GameEntry.GetComponent<DownloadComponent>();
             Entity = UnityGameFramework.Runtime.GameEntry.GetComponent<EntityComponent>();
             Event = UnityGameFramework.Runtime.GameEntry.GetComponent<EventComponent>();
-            FileSystem = UnityGameFramework.Runtime.GameEntry.GetComponent<FileSystemComponent>();
+            //FileSystem = UnityGameFramework.Runtime.GameEntry.GetComponent<FileSystemComponent>();
             Fsm = UnityGameFramework.Runtime.GameEntry.GetComponent<FsmComponent>();
             Localization = UnityGameFramework.Runtime.GameEntry.GetComponent<LocalizationComponent>();
             Network = UnityGameFramework.Runtime.GameEntry.GetComponent<NetworkComponent>();

@@ -5,6 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
+using System.Text;
 using GameFramework;
 using UnityEditor;
 using UnityEngine;
@@ -29,6 +30,18 @@ namespace StarForce.Editor.DataTableTools
                 DataTableGenerator.GenerateCodeFile(dataTableProcessor, dataTableName);
             }
 
+            AssetDatabase.Refresh();
+        }
+        
+        public static void GenerateCodeFile(string path, Encoding encoding)
+        {
+            DataTableProcessor dataTableProcessor = DataTableGenerator.CreateDataTableProcessor(path, encoding);
+            if (!DataTableGenerator.CheckRawData(dataTableProcessor, path))
+            {
+                Debug.LogError(Utility.Text.Format("Check raw data failure. DataTableName='{0}'", path));
+            }
+            
+            DataTableGenerator.GenerateCodeFile(dataTableProcessor, path);
             AssetDatabase.Refresh();
         }
     }

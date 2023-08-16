@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 4089229833
+CRC: 614064397
 Hashes:
   AssetFileHash:
     serializedVersion: 2
     Hash: 84a3fe37d75aa795d14d4d64a4e18ab0
   TypeTreeHash:
     serializedVersion: 2
-    Hash: f9f3d136959ac0e7043e721e899342fb
+    Hash: 8e6311b599b4d6df97c541d4b62bd445
 HashAppended: 0
 ClassTypes:
 - Class: 21
@@ -39,4 +39,4 @@ Assets:
 - Assets/GameMain/Materials/part_spark_yellow_mat.mat
 - Assets/GameMain/Materials/part_jet_flare_mat.mat
 Dependencies:
-- C:/Users/admin/Downloads/StarForce/WeiXinOutputResources/Working/WebGL/textures
+- D:/WorkSpace/StarForce/WeiXinOutputResources/Working/WebGL/textures

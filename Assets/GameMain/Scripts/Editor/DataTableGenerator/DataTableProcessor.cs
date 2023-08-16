@@ -79,6 +79,8 @@ namespace StarForce.Editor.DataTableTools
 
             m_RawValues = rawValues.ToArray();
 
+            #region Check
+
             if (nameRow < 0)
             {
                 throw new GameFrameworkException(Utility.Text.Format("Name row '{0}' is invalid.", nameRow));
@@ -128,6 +130,8 @@ namespace StarForce.Editor.DataTableTools
             {
                 throw new GameFrameworkException(Utility.Text.Format("Id column '{0}' >= raw column count '{1}' is not allow.", idColumn, rawColumnCount));
             }
+            
+            #endregion
 
             m_NameRow = m_RawValues[nameRow];
             m_TypeRow = m_RawValues[typeRow];

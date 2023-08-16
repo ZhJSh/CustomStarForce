@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2021-06-16 21:54:35.539
+// 生成时间：2023-08-16 15:53:48.190
 //------------------------------------------------------------
 
 using GameFramework;
@@ -19,7 +19,7 @@ using UnityGameFramework.Runtime;
 namespace StarForce
 {
     /// <summary>
-    /// 装甲表。
+    /// T。
     /// </summary>
     public class DRArmor : DataRowBase
     {
@@ -65,7 +65,6 @@ namespace StarForce
             int index = 0;
             index++;
             m_Id = int.Parse(columnStrings[index++]);
-            index++;
             MaxHP = int.Parse(columnStrings[index++]);
             Defense = int.Parse(columnStrings[index++]);
 

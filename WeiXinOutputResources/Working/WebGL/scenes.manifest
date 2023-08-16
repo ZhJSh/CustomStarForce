@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2936237560
+CRC: 2189577080
 Hashes:
   AssetFileHash:
     serializedVersion: 2
     Hash: 96a1d0a5b09d1f6162544dd1e9adc58d
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 6ff8ed7bd69ffb7fddca5f18734154ad
+    Hash: 1260fea9a95544c6e8d14feb268a507a
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -52,4 +52,4 @@ Assets:
 - Assets/GameMain/Scenes/Menu.unity
 - Assets/GameMain/Scenes/Main.unity
 Dependencies:
-- C:/Users/admin/Downloads/StarForce/WeiXinOutputResources/Working/WebGL/materials
+- D:/WorkSpace/StarForce/WeiXinOutputResources/Working/WebGL/materials
